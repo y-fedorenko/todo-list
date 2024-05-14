@@ -1,0 +1,125 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kode+Mono:wght@400..700&family=Noto+Sans+Mono:wght@100..900&family=Orbitron:wght@400..900&family=Reddit+Mono:wght@200..900&family=Teko:wght@300..700&display=swap');
+/* This font has styles 300 to 700 */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kode+Mono:wght@400..700&family=Noto+Sans+Mono:wght@100..900&family=Orbitron:wght@400..900&family=Reddit+Mono:wght@200..900&family=Teko:wght@300..700&display=swap');
+/* This font has styles 400 to 900 */
+
+
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: "Orbitron", "Comfortaa", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: rgb(251, 252, 255);
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+/* App container */
+.todo-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+h1 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 38px;
+  margin: 20px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Todo form */
+
+.todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.todo-btn {
+  padding: 10px 20px;
+  width: 120px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.todo-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Todo item */
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: "Comfortaa", sans-serif;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: #756c6c;
+  font-weight: 300;
+}
+
+/* FA icons */
+.icons-wrapper {
+  display: flex;
+}
+
+.icons-wrapper svg {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icons-wrapper svg:hover {
+  color: #dc3545;
+}
+
+.todo-text {
+  user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  font-display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Date string */
+p + p {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+}
